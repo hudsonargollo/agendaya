@@ -1,0 +1,16 @@
+Agendaya (BookingGo SaaS) — install complete
+
+Path: /root/ClubeMkt/agendaya/main-file
+DB: agendaya / user agendaya / pass agendaya (MariaDB 10.11)
+Migrations: 72 ran, 0 pending
+Seeds: notifications, email templates, plans, permissions, users, default settings, languages, packages
+Seeded logins:
+  superadmin@example.com / 1234  (super admin)
+  company@example.com / 1234     (company)
+Vite assets built: public/build (manifest + app-Buj5iI_6.js)
+Storage symlink: public/storage -> storage/app/public
+Web: nginx vhost agendaya.clubemkt.digital -> /root/ClubeMkt/agendaya/main-file/public (php-fpm 8.2)
+Services: mariadb, nginx, php8.2-fpm all active
+URL: http://agendaya.clubemkt.digital  (login page 200)
+
+Note: DNS for agendaya.clubemkt.digital is not yet configured in Cloudflare (NXDOMAIN as of install). Add an A record -> 62.171.137.90 (or CNAME to the host) via CF dashboard for public access; local access works via Host header.

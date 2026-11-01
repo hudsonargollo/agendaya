@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="citasyaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042F1A" />
+      <stop offset="40%" stop-color="#021C10" />
+      <stop offset="100%" stop-color="#090E17" />
+    </linearGradient>
+
+    <!-- Outer Border Glow -->
+    <linearGradient id="citasyaBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3E635" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#10B981" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Calendar Body Stroke Gradient -->
+    <linearGradient id="calStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3E635" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Checkmark Radiant Gradient -->
+    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BEF264" />
+      <stop offset="50%" stop-color="#84CC16" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+
+  <!-- App Icon Squircle Background -->
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#citasyaBg)" stroke="url(#citasyaBorder)" stroke-width="6" />
+
+  <!-- Ambient Glow Behind Calendar -->
+  <circle cx="256" cy="270" r="140" fill="#10B981" opacity="0.08" />
+
+  <!-- Top Calendar Binder Rings -->
+  <rect x="156" y="52" width="44" height="88" rx="22" fill="url(#calStroke)" />
+  <rect x="312" y="52" width="44" height="88" rx="22" fill="url(#calStroke)" />
+
+  <!-- Inner Calendar Rounded Frame -->
+  <rect x="76" y="106" width="360" height="324" rx="72" stroke="url(#calStroke)" stroke-width="32" fill="#0B131E" fill-opacity="0.85" />
+
+  <!-- Speed Streaks (Instant Booking in <30s) -->
+  <line x1="120" y1="230" x2="168" y2="230" stroke="#10B981" stroke-width="18" stroke-linecap="round" />
+  <line x1="102" y1="272" x2="174" y2="272" stroke="#84CC16" stroke-width="18" stroke-linecap="round" />
+  <line x1="126" y1="314" x2="164" y2="314" stroke="#34D399" stroke-width="18" stroke-linecap="round" />
+
+  <!-- Clock Dial Dotted Ring -->
+  <circle cx="270" cy="272" r="88" stroke="#334155" stroke-width="18" stroke-dasharray="8 20" stroke-linecap="round" fill="none" />
+  <circle cx="270" cy="272" r="88" stroke="#10B981" stroke-width="18" stroke-dasharray="60 260" stroke-dashoffset="40" stroke-linecap="round" fill="none" />
+
+  <!-- Center Clock Pivot Point -->
+  <circle cx="270" cy="272" r="10" fill="#84CC16" />
+
+  <!-- Main Radiant Checkmark (Citas "YA") -->
+  <path d="M216 270 L256 312 L342 216" stroke="url(#checkGrad)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Subtle Specular Reflection on Top Glass Curve -->
+  <path d="M24 130 C24 71 71 24 130 24 L382 24 C441 24 488 71 488 130 L488 170 C360 195 160 215 24 165 Z" fill="#FFFFFF" opacity="0.04" />
+</svg>
